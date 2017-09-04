@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.tuta.holamundo" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.tuta.holamundo" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>HolaMundo</name>
     <description>
         Agregamos el scanner de qr
@@ -49,11 +49,11 @@
         <splash density="port-xhdpi" src="www/res/screen/android/drawable-port-xhdpi-screen.png" />
         <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
-        <gap:config-file target="AndroidManifest.xml" parent="/*" mode="merge">
+        <config-file target="AndroidManifest.xml" parent="/*" mode="merge">
             <uses-permission android:name="android.permission.CAMERA" />
             <uses-feature android:name="android.hardware.camera" />
             <uses-feature android:name="android.hardware.camera.autofocus" />
-        </gap:config-file>
+        </config-file>
     </platform>
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
