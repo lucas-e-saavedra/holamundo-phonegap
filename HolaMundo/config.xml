@@ -116,5 +116,5 @@
     </platform>
     <engine name="android" spec="~6.2.3" />
     <plugin name="cordova-plugin-x-toast" spec="~2.6.0" />
-    <plugin name="com.phonegap.plugins.barcodescanner" spec="2.0.0" source="pgb" />
+    <plugin name="cordova-plugin-barcodescanner" spec="~0.7.2" />
 </widget>

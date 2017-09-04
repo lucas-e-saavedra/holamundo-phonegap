@@ -74,6 +74,7 @@
               cordova.plugins.barcodeScanner.scan(
                   function (result) {
                       alert(result.text);
+                      window.plugins.toast.showLongBottom(result.text);
                     },
                     function (error) {
                       alert("Ha ocurrido un error al escanear.");
