@@ -51,6 +51,7 @@
     <section>
       esto es una seccion
       <button onclick="click001()">Click Me</button>
+      <button onclick="scanear()">Scan QR</button>
     </section>
     <footer style="background-color:green;">soy un footer</footer>
 
@@ -69,6 +70,16 @@
             window.plugins.toast.showLongBottom('Hello there!');
             console.log("toast ejemplo");
           }
+          function scanear(){
+              cordova.plugins.barcodeScanner.scan(
+                  function (result) {
+                      alert(result.text);
+                    },
+                    function (error) {
+                      alert("Ha ocurrido un error al escanear.");
+                    }
+                  );
+        };
     </script>
 </body>
 
