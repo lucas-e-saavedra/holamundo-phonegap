@@ -121,5 +121,5 @@
     </platform>
     <engine name="android" spec="~6.2.3" />
     <plugin name="cordova-plugin-x-toast" spec="~2.6.0" />
-    <plugin name="cordova-plugin-barcodescanner" spec="~0.7.1" />
+    <!--<plugin name="cordova-plugin-barcodescanner" spec="~0.7.1" />-->
 </widget>
