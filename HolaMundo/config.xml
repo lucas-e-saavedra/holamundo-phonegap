@@ -114,11 +114,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <gap:config-file platform="android" parent="/manifest" mode="add">
-      <uses-permission android:name="android.permission.CAMERA" />
-      <uses-feature android:name="android.hardware.camera" />
-      <uses-feature android:name="android.hardware.camera.autofocus" />
-    </gap:config-file>
+    <feature name="http://api.phonegap.com/1.0/camera" />
     <engine name="android" spec="~6.2.3" />
     <plugin name="cordova-plugin-x-toast" spec="~2.6.0" />
     <plugin name="cordova-plugin-barcodescanner" spec="~0.7.2" />
