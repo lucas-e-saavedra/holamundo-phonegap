@@ -43,17 +43,32 @@
 </head>
 
 <body>
-    <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
-        </div>
-    </div>
+    <!--<div class="titlebar"><button onclick="mostrarOcultarMenu()">MENU</button></div>
+    <div class="content"></div>
+    <div id="leftmenu"></div>
+    <div class="rightcontent"></div>-->
+    <header style="background-color:yellow;">soy un header</header>
+    <section>
+      esto es una seccion
+      <button onclick="click001()">Click Me</button>
+    </section>
+    <footer style="background-color:green;">soy un footer</footer>
+
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
+        function mostrarOcultarMenu(){
+          document.getElementById('leftmenu').classList.toggle('opened');
+        }
+    </script>
+    <script>
+          function click001() {
+            alert("hola");
+            window.plugins.toast.showLongBottom('Entrada creada!');
+            window.plugins.toast.showLongBottom('Hello there!');
+            console.log("toast ejemplo");
+          }
     </script>
 </body>
 
