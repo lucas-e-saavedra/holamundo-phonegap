@@ -114,7 +114,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <gap:config-file target="AndroidManifest.xml" parent="/*" mode="merge">
+    <gap:config-file platform="android" parent="/manifest" mode="add">
       <uses-permission android:name="android.permission.CAMERA" />
       <uses-feature android:name="android.hardware.camera" />
       <uses-feature android:name="android.hardware.camera.autofocus" />
